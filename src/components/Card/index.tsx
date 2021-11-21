@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card, Div, Text, CardWithPhoto, Title, NameBox } from './styles/styles';
 import profile from '../../images/profile.jpg';
+import {AiOutlineGithub} from 'react-icons/ai';
+import {IoLogoLinkedin, IoMdMail} from 'react-icons/io'
 
 export default function CardAboutMe() {
     return (
@@ -30,6 +32,11 @@ export default function CardAboutMe() {
                     </Text>
                 </NameBox>
                 <Title>Junior Software Developer</Title>
+                <div>
+                    <a href="https://github.com/devbersi"><AiOutlineGithub size={40} color="black" /></a>
+                    <a href="https://www.linkedin.com/in/guilherme-bersi-7696861b3/"><IoLogoLinkedin size={40} color="black" /></a>
+                    <a href="mailto:guibersi.13@outlook.com"><IoMdMail size={40} color="black" /></a>
+                </div>
             </CardWithPhoto>
         </Div>
     )
