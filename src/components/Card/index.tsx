@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Div, Text, CardWithPhoto, Title, NameBox } from './styles/styles';
+import { Card, Div, Text, CardWithPhoto, Title, NameBox, PhotoDiv } from './styles/styles';
 import profile from '../../images/profile.jpg';
 import {AiOutlineGithub} from 'react-icons/ai';
 import {IoLogoLinkedin, IoMdMail} from 'react-icons/io'
@@ -25,7 +25,9 @@ export default function CardAboutMe() {
                 </div>
             </Card>
             <CardWithPhoto>
-                <img src={profile} alt="Foto de perfil" />
+                <PhotoDiv>
+                    <img src={profile} alt="Foto de perfil" />
+                </PhotoDiv>
                 <NameBox>
                     <Text>
                     devbersi

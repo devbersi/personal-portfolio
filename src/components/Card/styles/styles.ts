@@ -26,13 +26,36 @@ export const CardWithPhoto = styled.div `
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
 
     img {
-        width: 50%;
-        height: 32%;
+        width: 65%;
+        height: 91%;
 
-        border-radius: 100px;
+        border-radius: 110px;
     }
+
+    @media (max-width: 900px){
+        img {
+            width: 73%;
+            height: 98%;
+
+            margin-top: 5px;
+        }
+
+        height: 55%;
+        margin-top: 60px;
+    }
+`;
+
+export const PhotoDiv = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50%;
 `;
 
 export const Div = styled.div `
@@ -46,6 +69,10 @@ export const Div = styled.div `
     width: 900px;
     text-align: left;
     margin: 0 auto;
+
+    @media (max-width: 900px){
+        flex-direction: column-reverse;
+    }
 
 `;
 
